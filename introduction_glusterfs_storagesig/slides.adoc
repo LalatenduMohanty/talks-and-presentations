@@ -1,0 +1,67 @@
+= Intrduction to GlusterFS =
+Lalatendu Mohanty
+
+== Objective ==
+* Introduction to GlusterFS
+** What is GlusterFS?
+** Quick overview on key concepts
+** Use cases
+* Introduction to Storage SIG
+* Tutoral session on Deploying GlutserFS
+** Installing, creating and mounting a GlusterFS volume.
+** Puppet Gluster
+* Other GlusterFS features
+
+== What is GlusterFS ==
+* A  general purpose scale-out distributed file system.
+* Aggregates storage exports over network interconnect to provide a single unified name space.
+* Filesystem is stackable and completely in userspace.
+* Layered on disk file systems that support extended attributes.
+
+== GlusterFS Architecture ==
+* Software only, runs on commodity hardware
+* No external metadata servers
+* Scale-out architecture
+* Extensible and modular
+* Largely POSIX compliant
+
+== GlusterFS concepts – Trusted Storage Pool ==
+* Trusted Storage Pool (cluster) is a collection of storage servers.
+* Formed by invitation to a new member from any one member of the exiting pool.
+* Members can be dynamicaly added or removed from a pool
+
+== GlusterFS concepts - Bricks ==
+* Combination of a node and an export directory – for e.g. hostname:/dir
+* Each brick inherits limits of the underlying file system
+* The ondisk file system should support extended attributes.
+* No limit on the number bricks per node
+* Ideally, each brick in a cluster should be of the same size
+
+== GlusterFS concepts - Volumes ==
+* A volume is a logical collection of bricks.
+* Volume is identified by an administrator provided name.
+* Volume is a mountable entity and the volume name is provided at the time of mounting.
+** `mount -t glusterfs server1:/<volname> /my/mnt/point`
+*  Bricks from the same node can be part of different volumes
+
+== Volume Types ==
+* Type of a volume is specified at the time of volume creation
+* Volume type determines how and where data is placed
+* Following volume types are supported in glusterfs:
+** Distribute
+** Replication
+** Dispersed
+** Stripe
+** Distributed Replicate
+** Striped Replicate
+** Distributed Striped Replicate
+** Distributed Dispersed
+
+== CentOS Storage SIG ==
+
+== Demo ==
+
+== Puppet-gluster ==
+
+== Gluster features ==
+
