@@ -58,10 +58,28 @@ Lalatendu Mohanty
 ** Distributed Dispersed
 
 == CentOS Storage SIG ==
+* To ensure that CentOS is a suitable platform for many different open source storage solutions
+* It is an opertunity to use CentOS as a platform and build latest/greatest software on it.
+* An easy way to consume new technologies within CentOS ecosystem.
+* Aims to provide best upstream user experiance.
+
+== How to get involved with Storage SIG ==
+* All discussions happen on centos-devel mailing list
+* http://wiki.centos.org/SpecialInterestGroup/Storage
 
 == Demo ==
 
 == Puppet-gluster ==
 
 == Gluster features ==
+* Currently present in GlusterFS 3.6
+** Snapshot
+** Geo-repication
+** NFS V4 support
+** Quota
+** Erasure coding
 
+* Future
+** Data tiering
+** Bit rot
+ 
