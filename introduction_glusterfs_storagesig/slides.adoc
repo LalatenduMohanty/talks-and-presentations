@@ -62,6 +62,11 @@ Lalatendu Mohanty
 * It is an opertunity to use CentOS as a platform and build latest/greatest software on it.
 * An easy way to consume new technologies within CentOS ecosystem.
 * Aims to provide best upstream user experiance.
+* Current Projects
+** GlusterFS
+** Ceph
+** OpenAFS
+** SCST
 
 == How to get involved with Storage SIG ==
 * All discussions happen on centos-devel mailing list
