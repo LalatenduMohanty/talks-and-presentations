@@ -77,6 +77,10 @@ include::attributes.adoc[]
 * Ideally, each brick in a cluster should be of the same size
 ====
 
+== !
+
+image::Gluster-Bricks.png[]
+
 [.topic.source]
 == GlusterFS concepts - Volumes
 
@@ -90,7 +94,11 @@ include::attributes.adoc[]
 
 ====
 * Volume is a mountable entity and the volume name is provided at the time of mounting.
-** `mount -t glusterfs server1:/<volname> /my/mnt/point`
+
+[source,sh]
+----
+mount -t glusterfs server1:/<volname> /my/mnt/point
+----
 *  Bricks from the same node can be part of different volumes
 ====
 

@@ -454,7 +454,7 @@ kbd kbd:last-child { margin-right: 0; }
 section ul {
   /*list-style: none;*/
   padding-left: 1em;
-  font-size: 2.5em;
+  font-size: 2em;
   text-transform: uppercase;
   font-weight: 700;
   color: #1A6074;
@@ -1175,8 +1175,11 @@ section {
 <section class="topic source"><h2>GlusterFS concepts – Trusted Storage Pool</h2><div class="exampleblock"><div class="content"><ul><li>Trusted Storage Pool (cluster) is a collection of storage servers.</li><li>Formed by invitation to a new member from any one member of the exiting pool.</li><li>Members can be dynamicaly added or removed from a pool</li></ul></div></div></section>
 <section class="topic source"><h2>GlusterFS concepts - Bricks</h2><div class="exampleblock"><div class="content"><ul><li>Combination of a node and an export directory – for e.g. hostname:/dir</li><li>Each brick inherits limits of the underlying file system</li><li>The ondisk file system should support extended attributes.</li></ul></div></div></section>
 <section class="topic source"><h2>GlusterFS concepts - Bricks</h2><div class="exampleblock"><div class="content"><ul><li>No limit on the number bricks per node</li><li>Ideally, each brick in a cluster should be of the same size</li></ul></div></div></section>
+<section><img src="images/Gluster-Bricks.png" alt="Gluster Bricks" /></section>
 <section class="topic source"><h2>GlusterFS concepts - Volumes</h2><div class="exampleblock"><div class="content"><ul><li>A volume is a logical collection of bricks.</li><li>Volume is identified by an administrator provided name.</li></ul></div></div></section>
-<section class="topic source"><h2>GlusterFS concepts - Volumes</h2><div class="exampleblock"><div class="content"><ul><li>Volume is a mountable entity and the volume name is provided at the time of mounting.<ul><li><code>mount -t glusterfs server1:/&lt;volname&gt; /my/mnt/point</code></li></ul></li><li>Bricks from the same node can be part of different volumes</li></ul></div></div></section>
+<section class="topic source"><h2>GlusterFS concepts - Volumes</h2><div class="exampleblock"><div class="content"><ul><li>Volume is a mountable entity and the volume name is provided at the time of mounting.</li></ul>
+<div class="listingblock"><pre class="highlight"><code class="sh">mount -t glusterfs server1:/&lt;volname&gt; /my/mnt/point</code></pre></div>
+<ul><li>Bricks from the same node can be part of different volumes</li></ul></div></div></section>
 <section class="topic source"><h2>Volume Types</h2><div class="exampleblock"><div class="content"><ul><li>Type of a volume is specified at the time of volume creation</li><li>Volume type determines how and where data is placed</li><li>Following volume types are supported in glusterfs:<ul><li>Distribute</li><li>Replication</li></ul></li></ul></div></div></section>
 <section class="topic source"><h2>Volume Types</h2><div class="exampleblock"><div class="content"><ul><li>Volume types (continued..)<ul><li>Dispersed</li><li>Stripe</li><li>Distributed Replicate</li><li>Striped Replicate</li><li>Distributed Striped Replicate</li><li>Distributed Dispersed</li></ul></li></ul></div></div></section>
 <section class="topic source"><h2>CentOS Storage SIG</h2><div class="exampleblock"><div class="content"><ul><li>To ensure that CentOS is a suitable platform for many different open source storage solutions</li><li>It is an opertunity to use CentOS as a platform and build latest/greatest software on it.</li></ul></div></div></section>
