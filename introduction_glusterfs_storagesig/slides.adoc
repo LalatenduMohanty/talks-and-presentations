@@ -1,65 +1,135 @@
-= Intrduction to GlusterFS =
+= Introduction to _GlusterFS_ =
 Lalatendu Mohanty
+include::attributes.adoc[]
 
-== Objective ==
+[.topic.source]
+== Objective
+
+====
 * Introduction to GlusterFS
 ** What is GlusterFS?
 ** Quick overview on key concepts
 ** Use cases
 * Introduction to Storage SIG
+====
+
+[.topic.source]
+== Objective
+
+====
+
 * Tutoral session on Deploying GlutserFS
 ** Installing, creating and mounting a GlusterFS volume.
 ** Puppet Gluster
 * Other GlusterFS features
+====
 
-== What is GlusterFS ==
+[.topic.source]
+== What is GlusterFS
+
+====
 * A  general purpose scale-out distributed file system.
 * Aggregates storage exports over network interconnect to provide a single unified name space.
+====
+
+[.topic.source]
+== What is GlusterFS
+
+====
 * Filesystem is stackable and completely in userspace.
 * Layered on disk file systems that support extended attributes.
+====
 
-== GlusterFS Architecture ==
+[.topic.source]
+== GlusterFS Architecture
+
+====
 * Software only, runs on commodity hardware
 * No external metadata servers
 * Scale-out architecture
 * Extensible and modular
 * Largely POSIX compliant
+====
 
-== GlusterFS concepts – Trusted Storage Pool ==
+[.topic.source]
+== GlusterFS concepts – Trusted Storage Pool
+
+====
 * Trusted Storage Pool (cluster) is a collection of storage servers.
 * Formed by invitation to a new member from any one member of the exiting pool.
 * Members can be dynamicaly added or removed from a pool
+====
 
-== GlusterFS concepts - Bricks ==
+[.topic.source]
+== GlusterFS concepts - Bricks
+
+====
 * Combination of a node and an export directory – for e.g. hostname:/dir
 * Each brick inherits limits of the underlying file system
 * The ondisk file system should support extended attributes.
+====
+
+[.topic.source]
+== GlusterFS concepts - Bricks
+
+====
 * No limit on the number bricks per node
 * Ideally, each brick in a cluster should be of the same size
+====
 
-== GlusterFS concepts - Volumes ==
+[.topic.source]
+== GlusterFS concepts - Volumes
+
+====
 * A volume is a logical collection of bricks.
 * Volume is identified by an administrator provided name.
+====
+
+[.topic.source]
+== GlusterFS concepts - Volumes
+
+====
 * Volume is a mountable entity and the volume name is provided at the time of mounting.
 ** `mount -t glusterfs server1:/<volname> /my/mnt/point`
 *  Bricks from the same node can be part of different volumes
+====
 
-== Volume Types ==
+[.topic.source]
+== Volume Types
+
+====
 * Type of a volume is specified at the time of volume creation
 * Volume type determines how and where data is placed
 * Following volume types are supported in glusterfs:
 ** Distribute
 ** Replication
+====
+
+[.topic.source]
+== Volume Types
+
+====
+* Volume types (continued..)
 ** Dispersed
 ** Stripe
 ** Distributed Replicate
 ** Striped Replicate
 ** Distributed Striped Replicate
 ** Distributed Dispersed
+====
 
-== CentOS Storage SIG ==
+[.topic.source]
+== CentOS Storage SIG
+
+====
 * To ensure that CentOS is a suitable platform for many different open source storage solutions
 * It is an opertunity to use CentOS as a platform and build latest/greatest software on it.
+====
+
+[.topic.source]
+== CentOS Storage SIG
+
+====
 * An easy way to consume new technologies within CentOS ecosystem.
 * Aims to provide best upstream user experiance.
 * Current Projects
@@ -67,16 +137,31 @@ Lalatendu Mohanty
 ** Ceph
 ** OpenAFS
 ** SCST
+====
 
-== How to get involved with Storage SIG ==
+[.topic.source]
+== How to get involved with Storage SIG
+
+====
 * All discussions happen on centos-devel mailing list
 * http://wiki.centos.org/SpecialInterestGroup/Storage
+====
 
-== Demo ==
 
-== Puppet-gluster ==
+== !
 
-== Gluster features ==
+[.statement]
+*Demo*
+
+== !
+
+[.statement]
+*Puppet-gluster*
+
+[.topic.source]
+== Gluster features
+
+====
 * Currently present in GlusterFS 3.6
 ** Snapshot
 ** Geo-repication
@@ -87,4 +172,9 @@ Lalatendu Mohanty
 * Future
 ** Data tiering
 ** Bit rot
- 
+====
+
+== !
+
+[.statement]
+*Questions?*
