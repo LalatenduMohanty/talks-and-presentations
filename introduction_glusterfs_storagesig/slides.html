@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en" class="aspect-16-9"><head><meta charset="UTF-8" /><meta name="generator" content="Asciidoctor 1.5.2, dzslides backend" /><title>Introduction to GlusterFS</title><meta name="author" content="Lalatendu Mohanty" /><link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Neuton:400,700,800,400italic|Cedarville+Cursive" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" /><style>
+<!DOCTYPE html><html lang="en" class="aspect-16-9"><head><meta charset="UTF-8" /><meta name="generator" content="Asciidoctor 1.5.2, dzslides backend" /><title>Introduction to GlusterFS</title><meta name="author" content="Lalatendu Mohanty {@ #}lalatenduM lala@redhat.com" /><link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Neuton:400,700,800,400italic|Cedarville+Cursive" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" /><style>
 /* Asciidoctor style for highlight.js */
 pre code {
   display: block; padding: 0.5em;
@@ -1167,7 +1167,7 @@ section {
   -ms-transition: opacity 450ms ease-out 0ms;
   transition: opacity 450ms ease-out 0ms;
 }
-</style></head><body><section class="title"><h1>Introduction to <em>GlusterFS</em></h1><footer><span class="author">Lalatendu Mohanty</span></footer></section><section class="topic source"><h2>Objective</h2><div class="exampleblock"><div class="content"><ul><li>Introduction to GlusterFS<ul><li>What is GlusterFS?</li><li>Quick overview on key concepts</li><li>Use cases</li></ul></li><li>Introduction to Storage SIG</li></ul></div></div></section>
+</style></head><body><section class="title"><h1>Introduction to <em>GlusterFS</em></h1><footer><span class="author">Lalatendu Mohanty {@ #}lalatenduM lala@redhat.com</span></footer></section><section class="topic source"><h2>Objective</h2><div class="exampleblock"><div class="content"><ul><li>Introduction to GlusterFS<ul><li>What is GlusterFS?</li><li>Quick overview on key concepts</li></ul></li><li>Use cases</li><li>Ecosystem integration</li><li>Introduction to Storage SIG</li></ul></div></div></section>
 <section class="topic source"><h2>Objective</h2><div class="exampleblock"><div class="content"><ul><li>Tutoral session on Deploying GlutserFS<ul><li>Installing, creating and mounting a GlusterFS volume.</li><li>Puppet Gluster</li></ul></li><li>Other GlusterFS features</li></ul></div></div></section>
 <section class="topic source"><h2>What is GlusterFS</h2><div class="exampleblock"><div class="content"><ul><li>A  general purpose scale-out distributed file system.</li><li>Aggregates storage exports over network interconnect to provide a single unified name space.</li></ul></div></div></section>
 <section class="topic source"><h2>What is GlusterFS</h2><div class="exampleblock"><div class="content"><ul><li>Filesystem is stackable and completely in userspace.</li><li>Layered on disk file systems that support extended attributes.</li></ul></div></div></section>
@@ -1187,6 +1187,8 @@ section {
 <section class="topic source"><h2>How to get involved with Storage SIG</h2><div class="exampleblock"><div class="content"><ul><li>All discussions happen on centos-devel mailing list</li><li><a href="http://wiki.centos.org/SpecialInterestGroup/Storage" class="bare">http://wiki.centos.org/SpecialInterestGroup/Storage</a></li></ul></div></div></section>
 <section><p class="statement"><strong>Demo</strong></p></section>
 <section><p class="statement"><strong>Puppet-gluster</strong></p></section>
+<section class="topic source"><h2>Echosystem Integration</h2><div class="exampleblock"><div class="content"><ul><li>Currently integrated with various ecosystem peojects:<ul><li>OpenStack</li><li>Samba</li><li>NFS Ganesha</li><li>oVirt</li><li>qemu</li><li>Hadoop</li><li>Nagios</li></ul></li></ul></div></div></section>
+<section class="topic source"><h2>Use Cases - current</h2><div class="exampleblock"><div class="content"><ul><li>Unstructured data storage</li><li>Archival</li><li>Disaster Recovery</li><li>Virtual Machine Image Store</li><li>Cloud Storage for Service Providers</li><li>Content Cloud</li><li>Big Data</li><li>Semi-structured &amp; Structured data</li></ul></div></div></section>
 <section class="topic source"><h2>Gluster features</h2><div class="exampleblock"><div class="content"><ul><li>Currently present in GlusterFS 3.6<ul><li>Snapshot</li><li>Geo-repication</li><li>NFS V4 support</li><li>Quota</li><li>Erasure coding</li></ul></li><li>Future<ul><li>Data tiering</li><li>Bit rot</li></ul></li></ul></div></div></section>
 <section><p class="statement"><strong>Questions?</strong></p></section><script>
 //   __  __  __       .  __   ___  __

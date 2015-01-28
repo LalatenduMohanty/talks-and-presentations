@@ -1,5 +1,5 @@
 = Introduction to _GlusterFS_ =
-Lalatendu Mohanty
+Lalatendu Mohanty  {@ #}lalatenduM  lala@redhat.com
 include::attributes.adoc[]
 
 [.topic.source]
@@ -9,7 +9,8 @@ include::attributes.adoc[]
 * Introduction to GlusterFS
 ** What is GlusterFS?
 ** Quick overview on key concepts
-** Use cases
+* Use cases
+* Ecosystem integration
 * Introduction to Storage SIG
 ====
 
@@ -165,6 +166,35 @@ mount -t glusterfs server1:/<volname> /my/mnt/point
 
 [.statement]
 *Puppet-gluster*
+
+
+[.topic.source]
+== Echosystem Integration
+
+====
+* Currently integrated with various ecosystem peojects:
+** OpenStack
+** Samba
+** NFS Ganesha
+** oVirt
+** qemu
+** Hadoop
+** Nagios
+====
+
+[.topic.source]
+== Use Cases - current
+
+====
+* Unstructured data storage
+* Archival
+* Disaster Recovery
+* Virtual Machine Image Store
+* Cloud Storage for Service Providers
+* Content Cloud
+* Big Data
+* Semi-structured & Structured data
+====
 
 [.topic.source]
 == Gluster features
