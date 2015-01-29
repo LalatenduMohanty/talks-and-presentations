@@ -114,6 +114,14 @@ mount -t glusterfs server1:/<volname> /my/mnt/point
 ** Replication
 ====
 
+== !
+
+image::dht.png[]
+
+== !
+
+image::afr.png[]
+
 [.topic.source]
 == Volume Types
 
