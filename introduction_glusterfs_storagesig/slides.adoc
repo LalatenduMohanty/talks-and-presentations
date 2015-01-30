@@ -1,5 +1,6 @@
 = Introduction to _GlusterFS_ =
 Lalatendu Mohanty  {@ #}lalatenduM  lala@redhat.com
+:license: CC BY-SA 4.0
 include::attributes.adoc[]
 
 [.topic.source]
@@ -220,6 +221,15 @@ image::afr.png[]
 ** Enhancements for small file performance
 ====
 
+[.topic.source]
+== References
+
+====
+* https://github.com/gluster/glusterfs/blob/master/doc/admin-guide/en-US/markdown/admin_setting_volumes.md
+* wiki.centos.org/SpecialInterestGroup/Storage/gluster-Quickstart
+====
+
+[.topic.ending]
 == !
 
 [.statement]
