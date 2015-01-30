@@ -19,7 +19,7 @@ include::attributes.adoc[]
 
 ====
 
-* Tutoral session on Deploying GlutserFS
+* Tutorial session on Deploying GlutserFS
 ** Installing, creating and mounting a GlusterFS volume.
 ** Puppet Gluster
 * Other GlusterFS features
@@ -175,21 +175,6 @@ image::afr.png[]
 [.statement]
 *Puppet-gluster*
 
-
-[.topic.source]
-== Echosystem Integration
-
-====
-* Currently integrated with various ecosystem peojects:
-** OpenStack
-** Samba
-** NFS Ganesha
-** oVirt
-** qemu
-** Hadoop
-** Nagios
-====
-
 [.topic.source]
 == Use Cases - current
 
@@ -205,19 +190,34 @@ image::afr.png[]
 ====
 
 [.topic.source]
+== Echosystem Integration
+
+====
+* Currently integrated with various ecosystem peojects:
+** OpenStack
+** Samba
+** NFS Ganesha
+** oVirt
+** qemu
+** Hadoop
+** Nagios
+====
+[.topic.source]
 == Gluster features
 
 ====
 * Currently present in GlusterFS 3.6
 ** Snapshot
 ** Geo-repication
-** NFS V4 support
+** NFS v4 support with NFS Ganesha
 ** Quota
 ** Erasure coding
 
 * Future
 ** Data tiering
-** Bit rot
+** Bit Rot
+** Thousand node glusterd
+** Enhancements for small file performance
 ====
 
 == !
