@@ -1,5 +1,5 @@
 = Introduction to _GlusterFS_ =
-Lalatendu Mohanty  {@ #}lalatenduM  lala@redhat.com
+Lalatendu Mohanty - {@ #}lalatenduM   lala@redhat.com
 :license: CC BY-SA 4.0
 include::attributes.adoc[]
 
@@ -20,7 +20,7 @@ include::attributes.adoc[]
 
 ====
 
-* Tutorial session on Deploying GlutserFS
+* Tutorial session on Deploying GlusterFS
 ** Installing, creating and mounting a GlusterFS volume.
 ** Puppet Gluster
 * Other GlusterFS features
@@ -59,7 +59,7 @@ include::attributes.adoc[]
 ====
 * Trusted Storage Pool (cluster) is a collection of storage servers.
 * Formed by invitation to a new member from any one member of the exiting pool.
-* Members can be dynamicaly added or removed from a pool
+* Members can be dynamically added or removed from a pool
 ====
 
 [.topic.source]
@@ -141,7 +141,7 @@ image::afr.png[]
 
 ====
 * To ensure that CentOS is a suitable platform for many different open source storage solutions
-* It is an opertunity to use CentOS as a platform and build latest/greatest software on it.
+* It is an opportunity to use CentOS as a platform and build latest/greatest software on it.
 ====
 
 [.topic.source]
@@ -169,12 +169,14 @@ image::afr.png[]
 == !
 
 [.statement]
-*Demo*
+Demo
 
 == !
 
 [.statement]
-*Puppet-gluster*
+Puppet-Gluster+Vagrant
+
+James Shubin - @purpleidea
 
 [.topic.source]
 == Use Cases - current
@@ -191,7 +193,7 @@ image::afr.png[]
 ====
 
 [.topic.source]
-== Echosystem Integration
+== Ecosystem Integration
 
 ====
 * Currently integrated with various ecosystem peojects:
@@ -209,7 +211,8 @@ image::afr.png[]
 ====
 * Currently present in GlusterFS 3.6
 ** Snapshot
-** Geo-repication
+** User serviceable snapshots
+** Geo-replication
 ** NFS v4 support with NFS Ganesha
 ** Quota
 ** Erasure coding
@@ -227,6 +230,7 @@ image::afr.png[]
 ====
 * https://github.com/gluster/glusterfs/blob/master/doc/admin-guide/en-US/markdown/admin_setting_volumes.md
 * wiki.centos.org/SpecialInterestGroup/Storage/gluster-Quickstart
+* http://blog.gluster.org/2014/10/glusterfs-3-6-0-is-alive/
 ====
 
 [.topic.ending]
