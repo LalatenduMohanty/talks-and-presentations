@@ -231,6 +231,8 @@ James Shubin - @purpleidea
 * https://github.com/gluster/glusterfs/blob/master/doc/admin-guide/en-US/markdown/admin_setting_volumes.md
 * wiki.centos.org/SpecialInterestGroup/Storage/gluster-Quickstart
 * http://blog.gluster.org/2014/10/glusterfs-3-6-0-is-alive/
+
+* Find this talk at: https://github.com/LalatenduMohanty/talks-and-presentations/tree/master/introduction_glusterfs_storagesig
 ====
 
 [.topic.ending]
